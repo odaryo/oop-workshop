@@ -10,6 +10,8 @@ restart:
 down:
 	docker-compose down
 
+keygen:
+	docker-compose exec php-fpm php artisan key:generate
 install:
 	docker-compose exec php-fpm composer install
 test:
